@@ -19,7 +19,7 @@ console.log(uri);
 
 async function run() {
   try {
-     client.connect();
+    await client.connect();
     const database = client.db("wivoDB");
     const productsCollection = database.collection("products");
     const reviewsCollection = database.collection("reviews");
